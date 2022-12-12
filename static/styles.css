@@ -1,0 +1,80 @@
+html, body {
+    /* background-color: rgb(8, 8, 8); */
+    background-image: linear-gradient(rgb(11, 103, 119), rgb(221, 234, 238));
+    font-family: "Roboto","Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.col-md-2:empty {
+    min-height: 100%;
+    background-color: #417690;
+    height: 100%;
+}
+
+.title-page {
+    background-color: #264b5d;
+    color: #dfcb5b;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.btn {
+    margin-top:16px; 
+    border-radius: 0%;
+    
+}
+
+.btn-primary {
+    border-radius: 0%;
+    width: 100%;
+    height: 50px;
+}
+.navbar-brand p{
+    display: block;
+    background-color: #264b5d;
+    margin: 0px;
+    padding-left: 18px;
+    padding-right: 18px;
+    color: aliceblue;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.text-black {
+    color: rgb(240, 13, 13);
+}
+.nav-item {
+    width: 220px;
+    text-align: center;
+}
+
+.nav-item :hover{
+    background-color: #417690;
+    color: rgb(243, 239, 239);
+}
+
+.dropdown-menu :hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+form {
+    margin-top: 50px;
+}
+
+.filename {
+    margin-top:17px; 
+    font-size: 12pt;
+    color: rgb(238, 238, 219);
+}
+#drop_zone {
+    border: 3px solid black;
+    width: 100%;
+    height: 150px;
+  }

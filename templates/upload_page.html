@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block left %}
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a id="username" href="#" style="color: white;">{{name}}</a>
+        </li>                 
+    </ul>
+{% end %}
+{% block content %}
+    <form enctype="multipart/form-data" id="myForm">
+        <input class="form-control" type="file" name="myfiles" id="myfiles" multiple>
+        <input class="btn btn-primary" type="submit" value="Upload">
+    </form>
+    <br>
+
+    <table class="table table-dark table-hover">
+        <thead class="table-success">
+          <tr>
+            <th>File</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for file in files_list %}
+            <tr>
+                <td>
+                    <a href="{{ file }}" download>
+                        <img src="{{ static_url("images/file.jpg") }}" alt="file" style="height: 50px; width: 80px;">
+                    </a>
+                </td>            
+                <td>
+                <a href="{{ file }}" class="filename" download>{{ file[48:] }}</a>
+                </td>            
+            </tr>
+            {% end %}
+        </tbody>
+      </table>
+{% end %}
+{% block right %}
+<p id="process"></p>
+{% end %}
